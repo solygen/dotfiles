@@ -1,12 +1,19 @@
+# colors please
+# http://unix.stackexchange.com/questions/43408/printing-colored-text-using-echo
+alias delim='echo -e "\e[32m################[  FINISHED  ]################\e[0m" && echo'
+
 # personal block
-alias vers='git --version && echo && karma --version && echo && echo "npm version" && npm --version && echo && echo  "node version" && node --version'
 alias repo='cd && cd gitrep/web/ui'
+alias vers='git --version && echo && karma --version && echo && echo "npm version" && npm --version && echo && echo  "node version" && node --version'
 alias testkarma='cd && cd gitrep/web/ui && clear && ./build.sh testserver'
 
 #git bisect
-alias good="git bisect good && ui/build.sh clean && ui/build.sh"
-alias bad="git bisect bad && ui/build.sh clean && ui/build.sh"
-alias clean="cd && cd gitrep/web && ui/build.sh clean && ui/build.sh"
+alias clean="cd && cd gitrep/web && ui/build.sh clean && ui/build.sh && delim"
+alias earlier="git checkout HEAD~100 && clean"
+alias good="git bisect good && clean"
+alias bad="git bisect bad && clean"
+alias dig="git bisect bad && earlier"
+alias bisect='repo && cd .. && git bisect start && git bisect bad && earlier'
 
 #git shorthand
 alias my="repo && g my"
