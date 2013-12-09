@@ -12,7 +12,7 @@ alias clean="cd && cd gitrep/web && ui/build.sh clean && ui/build.sh && delim"
 alias earlier="git checkout HEAD~100 && clean"
 alias good="git bisect good && clean"
 alias bad="git bisect bad && clean"
-alias dig="git bisect bad && earlier"
+alias digdeeper="git bisect bad && earlier"
 alias bisect='repo && cd .. && git bisect start && git bisect bad && earlier'
 
 #git shorthand
