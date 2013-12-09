@@ -1,0 +1,57 @@
+[
+    //eclipse style duplicate lines
+    { "keys": ["super+shift+down"], "command": "duplicate_line" },
+    { "keys": ["ctrl+alt+down"], "command": "duplicate_line" },
+    { "keys": ["super+shift+up"], "command": "duplicate_line" },
+    { "keys": ["ctrl+alt+up"], "command": "duplicate_line" },
+
+    //delete line
+    { "keys": ["alt+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
+    { "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
+    { "keys": ["super+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
+
+    //swap lines
+    { "keys": ["super+up"], "command": "swap_line_up" },
+    { "keys": ["super+down"], "command": "swap_line_down" },
+    { "keys": ["super+shift+s"], "command": "save_all" },
+
+    //origami
+    { "keys": [ "alt+up"], "command": "create_pane", "args": {"direction": "up"} },
+    { "keys": [ "alt+right"], "command": "create_pane", "args": {"direction": "right"} },
+    { "keys": [ "alt+down"], "command": "create_pane", "args": {"direction": "down"} },
+    { "keys": [ "alt+left"], "command": "create_pane", "args": {"direction": "left"} },
+
+    { "keys": [ "alt+shift+up"], "command": "destroy_pane", "args": {"direction": "up"} },
+    { "keys": [ "alt+shift+right"], "command": "destroy_pane", "args": {"direction": "right"} },
+    { "keys": [ "alt+shift+down"], "command": "destroy_pane", "args": {"direction": "down"} },
+    { "keys": [ "alt+shift+left"], "command": "destroy_pane", "args": {"direction": "left"} },
+
+    // highlight current file in tree
+    { "keys": ["ctrl+super+r"], "command": "reveal_in_side_bar" },
+
+
+    { "keys": ["super+1"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "git blame"} },
+    { "keys": ["f1"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "git blame"} },
+    { "keys": ["super+^"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": ""} },
+
+    // jump to matching bracket
+    { "keys": ["super+2"], "command": "move_to", "args": {"to": "brackets"} },
+
+    //folding
+    { "keys": ["super+3"], "command": "fold" },
+    { "keys": ["super+4"], "command": "unfold" },
+
+
+    { "keys": ["ctrl+shift+r"], "command": "reindent" , "args": {"single_line": false}},
+
+    //Extra
+    { "keys": ["ctrl+t"], "command": "side_bar_new_file2" },
+    { "keys": ["f2"], "command": "side_bar_rename" },
+    { "keys": ["ctrl+alt+f"], "command": "side_bar_find_files_path_containing" },
+    { "keys": ["ctrl+shift+h"], "command": "side_bar_find_files_path_containing" },
+
+    //build
+    { "keys": ["super+b"], "command": "build" },
+    { "keys": ["super+shift+b"], "command": "build", "args": {"clean": "true"} }
+]
+
