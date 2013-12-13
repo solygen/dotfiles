@@ -70,6 +70,9 @@ installcask google-drive
 #git client
 installcask sourcetree
 
+#vpn
+installcask tunnelblick
+
 #ide
 #installcask sublime-text
 
@@ -82,9 +85,20 @@ installcask scrup
 installcask teamviewer
 installcask vlc
 
-#quick look plugins
+#quicklook plugins
 #https://github.com/sindresorhus/quick-look-plugins
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package && qlmanage -r
+brew cask install qlcolorcode
+brew cask install qlstephen
+brew cask install qlmarkdown
+brew cask install quicklook-json
+brew cask install qlprettypatch
+brew cask install quicklook-csv
+brew cask install betterzipql
+brew cask install webp-quicklook
+brew cask install suspicious-package
+#reset
+qlmanage -r
+
 
 # Remove outdated versions from the cellar
 brew cleanup
