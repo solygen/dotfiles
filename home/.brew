@@ -73,14 +73,17 @@ installcask sourcetree
 #vpn
 installcask tunnelblick
 
-#ide
+#editors
 #installcask sublime-text
+installcask mou
+
+#productivity
+installcask spectacle
 
 #else
 installcask calibre
 installcask clementine
 installcask keepass-x
-installcask mou
 installcask scrup
 installcask teamviewer
 installcask vlc
