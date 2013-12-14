@@ -54,6 +54,9 @@
     #my
     my = log -40 --author=frank --pretty=format:"%C(yellow)%h\\ %C(blue)%ad%C(red)%d\\ %C(reset)%s" --decorate --date=short
 
+    #commit count
+    count = shortlog -s -n 
+
     #get all aliases
     la = "!git config -l | grep alias | cut -c 7-"
 
