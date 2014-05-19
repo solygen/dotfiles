@@ -1,6 +1,10 @@
 # Colors please
 # http://unix.stackexchange.com/questions/43408/printing-colored-text-using-echo
-alias delim='echo -e "\e[32m################[  FINISHED  ]################\e[0m" && echo'
+if command -v ponysay > /dev/null 2>&1; then
+    alias delim='ponysay -f angel -b round "I'"'"'m done!"'
+else # OS X `ls`
+    alias delim='echo -e "\e[32m################[  FINISHED  ]################\e[0m" && echo'
+fi
 
 # Paths
 alias finder='open .'
@@ -9,14 +13,22 @@ alias webroot='cd /Library/WebServer/Documents'
 
 # Testing
 alias testkarma='cd && cd gitrep/web/ui && clear && ./build.sh testserver'
+alias testkarma-all='cd && cd gitrep/web/ui && clear && ./build.sh testserver-all'
+
+#grunt
+alias build="cd && cd gitrep/web/ui && grunt --uncompressed --keep --benchmark --no-color"
+alias gru="build && cd .. && delim"
+alias gruc="cd && cd gitrep/web/ui && grunt clean && build && delim"
 
 # Start with 'bisect ': check current commit then 'good' or 'bad'
 alias bisect='repo && cd .. && git bisect start && git bisect bad && earlier'
-alias good="git bisect good && clean"
-alias bad="git bisect bad && clean"
+alias good="cd gitrep/web/ && git bisect good && gruc"
+alias bad="cd gitrep/web/ && git bisect bad && gruc"
 alias digdeeper="git bisect bad && earlier"
-alias clean="cd && cd gitrep/web && ui/build.sh clean && ui/build.sh && delim"
-alias earlier="git checkout HEAD~100 && clean"
+#alias clean="cd && cd gitrep/web && ui/build.sh clean && ui/build.sh && delim"
+#alias clean="cd && cd gitrep/web/ui && gruc && delim && cd .."
+
+alias earlier="git checkout HEAD~100 && gruc"
 
 # Git shortcut to show my commits
 alias my="repo && g my"

@@ -39,6 +39,7 @@
     fb = "!f() { git branch -a --contains $1; }; f"
     # Find tags containing commit
     ft = "!f() { git describe --always --contains $1; }; f"
+    
     # Find commits by sourcecode
     fc = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short -S$1; }; f"
     # Find commits by commit message
@@ -92,7 +93,11 @@
     # Include summaries of merged commits in newly created merge commit messages
     log = true
 
-# URL shorthands
+[push]
+    default = matching
+[commit]
+    template = ~/.gittemplate
+
 [url "git@github.com:"]
     insteadOf = "gh:"
     pushInsteadOf = "github:"
@@ -106,6 +111,7 @@
 [url "git://gist.github.com/"]
     insteadOf = "gist:"
 
-[push]
-    default = matching
-[user]
+
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f

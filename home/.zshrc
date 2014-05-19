@@ -63,3 +63,5 @@ export JAVA_HOME="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Ho
 
 #apache
 alias apache-restart="sudo /usr/sbin/apachectl restart"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
