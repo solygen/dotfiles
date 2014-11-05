@@ -1,0 +1,29 @@
+{
+	"installed_packages":
+	[
+		"Alignment",
+		"BracketHighlighter",
+		"Can I Use",
+		"Diffy",
+		"DocBlockr",
+		"EditorConfig",
+		"Git",
+		"GitGutter",
+		"Grunt",
+		"Gutter Color",
+		"JsFormat",
+		"JSHint",
+		"JSHint Gutter",
+		"LESS",
+		"Less Tabs",
+		"MarkdownEditing",
+		"Pretty JSON",
+		"SideBarEnhancements",
+		"SideBarGit",
+		"Sublime Bookmarks",
+		"Theme - Soda",
+		"TidyTabs",
+		"TodoReview",
+		"TrailingSpaces"
+	]
+}

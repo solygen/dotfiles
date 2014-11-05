@@ -1,0 +1,4 @@
+<snippet>
+    <content>console.log('%c' + '!!!', 'color: white; background-color: grey'); </content>
+    <tabTrigger>warn</tabTrigger>
+</snippet>

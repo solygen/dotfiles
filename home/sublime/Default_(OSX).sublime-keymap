@@ -40,7 +40,8 @@
     //folding
     { "keys": ["super+3"], "command": "fold" },
     { "keys": ["super+4"], "command": "unfold" },
-
+    { "keys": ["super+5"], "command": "alignment" },
+    { "keys": ["super+6"], "command": "less_tabs" },
 
     { "keys": ["ctrl+shift+r"], "command": "reindent" , "args": {"single_line": false}},
 
@@ -52,6 +53,11 @@
 
     //build
     { "keys": ["super+b"], "command": "build" },
-    { "keys": ["super+shift+b"], "command": "build", "args": {"clean": "true"} }
+    { "keys": ["super+shift+b"], "command": "build", "args": {"clean": "true"} },
+
+    // simplify save all
+    { "keys": ["super+alt+s"], "command": "save" },
+    { "keys": ["super+s"], "command": "save_all" }
+
 ]
 

@@ -1,0 +1,12 @@
+<snippet>
+
+<content>
+// Which we then observe
+Object.observe(data, function(changes){
+    changes.forEach(function(change) {
+        console.log(change.type, change.name, change.oldValue);
+    });
+});
+</content>
+    <tabTrigger>observe</tabTrigger>
+</snippet>

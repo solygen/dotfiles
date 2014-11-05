@@ -1,0 +1,20 @@
+{
+    "patterns": {
+        "TODO": "TODO[\\s]*?:[\\s]*(?P<todo>.*)$",
+        "FIXME": "FIX ?ME[\\s]*?:[\\s]*(?P<fixme>.*)$",
+        "NOTE": "NOTE[\\s]*?:[\\s]*(?P<note>.*)$",
+        "CHANGED": "CHANGED[\\s]*?:[\\s]*(?P<changed>.*)$"
+    }   ,
+    "patterns_weight": {
+        "TODO": 1,
+        "FIXME": 2,
+        "NOTE": 3,
+        "CHANGED": 4
+    },
+    "exclude_folders": [
+        "*.git*",
+        "*node_modules*",
+        "*bower_components*"
+    ],
+    "render_folder_depth": 3
+}
