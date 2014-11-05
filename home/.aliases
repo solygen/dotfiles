@@ -83,6 +83,7 @@ alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date
 alias update-apple='sudo softwareupdate -i -a;'
 alias update-brew='brew update; brew upgrade; brew cleanup;'
 alias update-npm='npm update npm -g; npm update -g;'
+alias update-npmpackage='npm install && npm update && npm prune;'
 alias update-gems='sudo gem update --system; sudo gem update'
 alias update-ohmyzsh='upgrade_oh_my_zsh'
 alias update='update-apple && update-brew && update-npm && update-gems && update-ohmyzsh'
