@@ -22,8 +22,8 @@ alias gruc="cd && cd gitrep/web/ui && grunt clean && build && delim"
 
 # Start with 'bisect ': check current commit then 'good' or 'bad'
 alias bisect='repo && cd .. && git bisect start && git bisect bad && earlier'
-alias good="cd gitrep/web/ && git bisect good && gruc"
-alias bad="cd gitrep/web/ && git bisect bad && gruc"
+alias good="cd && cd gitrep/web/ && git bisect good && gruc"
+alias bad="cd && cd gitrep/web/ && git bisect bad && gruc"
 alias digdeeper="git bisect bad && earlier"
 #alias clean="cd && cd gitrep/web && ui/build.sh clean && ui/build.sh && delim"
 #alias clean="cd && cd gitrep/web/ui && gruc && delim && cd .."
