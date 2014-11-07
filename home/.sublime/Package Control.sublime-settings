@@ -2,8 +2,10 @@
 	"installed_packages":
 	[
 		"Alignment",
+		"BlameHighlighter",
 		"BracketHighlighter",
 		"Can I Use",
+		"Color Highlighter",
 		"Diffy",
 		"DocBlockr",
 		"EditorConfig",

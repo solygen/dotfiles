@@ -1,0 +1,30 @@
+{
+    "_comment" : {
+        "supported": [
+            "TODO foo",
+            "TODO: foo",
+            "//TODO: foo",
+            "//TODO foo",
+            "// TODO: foo",
+            "// TODO foo",
+        ]
+    },
+    "patterns": {
+        "FIXME": "\/\/[ ]*FIX ?ME[\\s]*?:?[\\s]*(?P<fixme>.*)$",
+        "TODO": "\/\/[ ]*TODO[\\s]*?[\\:]?[\\s]*(?P<todo>.*)$",
+        "HACK": "\/\/[ ]*HACK[\\s]*?:?[\\s]*(?P<hack>.*)$",
+        "DEBUGGING": "\/\/[ ]*DEBUGGING[\\s]*?:?[\\s]*(?P<debugging>.*)$"
+    },
+    "patterns_weight": {
+        "FIXME": 1,
+        "TODO": 2,
+        "HACK": 3,
+        "DEBUGGING": 4
+    },
+    "exclude_folders": [
+        "*.git*",
+        "*node_modules*",
+        "*bower_components*"
+    ],
+    "render_folder_depth": 3
+}
