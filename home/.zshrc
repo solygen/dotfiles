@@ -54,7 +54,7 @@ export PATH=/usr/local/opt/ruby/bin:/Users/frankpaczynski/gitrep/web/ui/bin:/usr
 
 # grunt jsdoc
 # /usr/libexec/java_home
-export JAVA_HOME="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_76.jdk/Contents/Home"
 
 #-----------------------------------
 #create symlink for ox7/
@@ -64,4 +64,5 @@ export JAVA_HOME="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Ho
 #apache
 alias apache-restart="sudo /usr/sbin/apachectl restart"
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+ANDROID_HOME=/Applications/android-sdk-macosx
+PATH=$PATH:$HOME/.rvm/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools # Add RVM to PATH for scripting
