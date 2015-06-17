@@ -8,7 +8,11 @@ fi
 
 # Paths
 alias finder='open .'
-alias repo='cd && cd gitrep/web/ui'
+alias qq40='cd && cd gitrep/7.4.0/ui'
+alias qq61='cd && cd gitrep/7.6.1/ui'
+alias qq62='cd && cd gitrep/7.6.2/ui'
+alias qq80='cd && cd gitrep/7.8.0/ui'
+alias gcw='grunt connect watch'‚
 alias webroot='cd /Library/WebServer/Documents'
 
 # Testing
@@ -31,7 +35,7 @@ alias digdeeper="git bisect bad && earlier"
 alias earlier="git checkout HEAD~100 && gruc"
 
 # Git shortcut to show my commits
-alias my="repo && g my"
+alias my="g my"
 
 # Shortcuts
 alias d="cd ~/Dropbox"
