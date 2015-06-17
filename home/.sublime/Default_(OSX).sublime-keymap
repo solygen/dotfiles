@@ -5,6 +5,7 @@
     { "keys": ["super+shift+up"], "command": "duplicate_line" },
     { "keys": ["ctrl+alt+up"], "command": "duplicate_line" },
 
+
     //delete line
     { "keys": ["alt+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
     { "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
@@ -42,6 +43,9 @@
     { "keys": ["super+4"], "command": "unfold" },
     { "keys": ["super+5"], "command": "alignment" },
     { "keys": ["super+6"], "command": "less_tabs" },
+    // git gutter
+    { "keys": ["super+9"], "command": "git_gutter_next_change" },
+    { "keys": ["super+0"], "command": "git_gutter_next_change" },
 
     { "keys": ["ctrl+shift+r"], "command": "reindent" , "args": {"single_line": false}},
 
