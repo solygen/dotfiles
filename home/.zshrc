@@ -1,3 +1,5 @@
+# http://www.smashingmagazine.com/2015/07/become-command-line-power-user-oh-my-zsh-z/
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -30,7 +32,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_CORRECTION="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment following line if you want to disable marking untracked files under
 # VCS as dirty. This makes repository status check for large repositories much,
@@ -40,7 +42,8 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx brew npm sublime)
+# https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins
+plugins=(git gitfast git-extras osx brew bower z npm sublime sudo)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -48,6 +51,7 @@ source $ZSH/oh-my-zsh.sh
 # concat to /etc/path
 export PATH=/usr/local/opt/ruby/bin:/Users/frankpaczynski/gitrep/web/ui/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/npm/bin:$PATH
 
+export PATH=$PATH:~/scripts/
 #imagemagick
 # export MAGICK_HOME=/usr/local/Cellar/imagemagick/6.8.6-3
 # export DYLD_LIBRARY_PATH=/usr/local/Cellar/imagemagick/6.8.6-3/lib
@@ -63,6 +67,25 @@ export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_76.jdk/Contents/Hom
 
 #apache
 alias apache-restart="sudo /usr/sbin/apachectl restart"
-
+NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
 ANDROID_HOME=/Applications/android-sdk-macosx
 PATH=$PATH:$HOME/.rvm/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools # Add RVM to PATH for scripting
+
+#rupa/z
+. ~/z/z.sh
+
+# Added by termtile (https://github.com/apaszke/termtile)
+#alias ul='osascript ~/.termtile/tile.scpt up left'
+#alias ur='osascript ~/.termtile/tile.scpt up right'
+#alias dl='osascript ~/.termtile/tile.scpt down left'
+#alias dr='osascript ~/.termtile/tile.scpt down right'
+alias ll='osascript ~/.termtile/tile.scpt left'
+alias rr='osascript ~/.termtile/tile.scpt right'
+alias up='osascript ~/.termtile/tile.scpt up'
+alias down='osascript ~/.termtile/tile.scpt down'
+#alias big='osascript ~/.termtile/resize.scpt '
+alias cen='osascript ~/.termtile/center.scpt '
+alias max='osascript ~/.termtile/maximize.scpt '
+alias sn='osascript ~/.termtile/changeScreen.scpt next'
+alias fs='osascript ~/.termtile/fullscreen.scpt '
+

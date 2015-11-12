@@ -8,10 +8,12 @@ fi
 
 # Paths
 alias finder='open .'
+alias qqp='cd && /Users/frankpaczynski/gitrep/plugins/custom'
 alias qq40='cd && cd gitrep/7.4.0/ui'
 alias qq61='cd && cd gitrep/7.6.1/ui'
 alias qq62='cd && cd gitrep/7.6.2/ui'
 alias qq80='cd && cd gitrep/7.8.0/ui'
+alias qq81='cd && cd gitrep/7.8.1/ui'
 alias gcw='grunt connect watch'‚
 alias webroot='cd /Library/WebServer/Documents'
 
@@ -38,6 +40,7 @@ alias earlier="git checkout HEAD~100 && gruc"
 alias my="g my"
 
 # Shortcuts
+alias f='open .'
 alias d="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
@@ -48,8 +51,9 @@ alias dt="cd ~/Desktop"
 #alias v="vim"
 #alias m="mate ."
 alias s="subl ."
+alias a="atom ."
 alias o="open"
-alias oo="open ."upda
+alias oo="open ."
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

@@ -33,6 +33,7 @@ brew install homebrew/dupes/grep
 brew install archey
 #brew install exiv2
 brew install git
+brew install gitup
 brew install imagemagick
 #brew install lynx
 brew install ngrep
@@ -88,10 +89,9 @@ installcask speedlimit
 #else
 installcask cakebrew
 installcask calibre
-installcask clementine
 installcask imagemin
 installcask keepass-x
-installcask scrup
+installcask openemu
 installcask teamviewer
 installcask vlc
 
